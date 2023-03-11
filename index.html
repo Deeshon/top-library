@@ -5,20 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
     <script src="script.js" defer></script>
-    <title>Document</title>
+    <title>library</title>
 </head>
 <body>
     <div class="header">
-        <div><p class="title">library</p></div>
+        <div><p class="title">Library</p></div>
         <div><button class="login">Log in</button></div>
     </div>
-    <div class="main-container">
-        <div class="add-button">
-            <button class="add"> + Add Book</button>
-        </div>
+    <div class="main-container" id="mainContainer">
+       
         <div class="card-container">
-            <div class="card"></div>
+            <div class="card">
+                <p class="content"><input type="text" id="title"></p>
+                <p class="content"><input type="text" id="author"></p>
+                <p class="content"><input type="number" id="page"></p>
+                <p class="content">Have you read the book<input type="checkbox" id="status"></p>
+                <p class="content"><button class="add">Add Book</button></p>
+            </div>
         </div>
 
     </div>
