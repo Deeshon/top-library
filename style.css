@@ -75,3 +75,20 @@ html, body {
     cursor: pointer;
 }
 
+.card-container {
+    margin-left: 70px;
+    width: 90%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card {
+    background-color: white;
+    width: 350px;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
