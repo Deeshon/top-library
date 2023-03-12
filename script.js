@@ -7,7 +7,8 @@ function Book(title, author, pages, status) {
     this.status = status
 }
 
-function createCard(book) {
+
+function createCard(book,i) {
     const cardContainer = document.querySelector(".card-container")
     const card = document.createElement("div")
     const title = document.createElement("p")
@@ -20,7 +21,7 @@ function createCard(book) {
 
     title.textContent = book.title
     author.textContent = book.author
-    page.textContent = book.pages
+    page.textContent = `${book.pages} pages`
     btn.textContent = book.status
     removeBtn.textContent = "Remove"
 
@@ -29,6 +30,7 @@ function createCard(book) {
     }
 
     card.classList.add("card")
+    card.setAttribute('id', `card${i}`)
     title.classList.add("content")
     author.classList.add("content")
     page.classList.add("content")
@@ -36,6 +38,11 @@ function createCard(book) {
     removeBtnP.classList.add("content")
     btn.classList.add("read")
     removeBtn.classList.add("remove")
+    removeBtn.setAttribute('id', `card${i}`)
+
+    removeBtn.addEventListener('click', () => {
+        card.remove()
+    })
 
     cardContainer.appendChild(card)
     card.appendChild(title)
@@ -74,10 +81,13 @@ document.querySelector(".add").addEventListener('click', () => {
     console.log(myLibrary)
     for (let i = 0; i < myLibrary.length; i++) {
         if (i == myLibrary.length -1) {
-            createCard(myLibrary[i])
+            createCard(myLibrary[i],i)
         }
-        
     }
 })
+
+
+
+
 
 
