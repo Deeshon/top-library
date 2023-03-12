@@ -44,6 +44,18 @@ function createCard(book,i) {
         card.remove()
     })
 
+    btn.addEventListener('click', () => {
+        if (book.status == "Read") {
+            book.status = "Not Read"
+            btn.textContent = book.status
+            btn.style.backgroundColor = "#ff9c9c"
+        } else {
+            book.status = "Read"
+            btn.textContent = book.status
+            btn.style.backgroundColor = "#9fff9c"
+        }
+    })
+
     cardContainer.appendChild(card)
     card.appendChild(title)
     card.appendChild(author)

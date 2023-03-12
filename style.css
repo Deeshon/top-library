@@ -6,7 +6,7 @@ html, body {
 }
 
 .header {
-    background-color: whitesmoke;
+    background-color: #00AB66;
     width: 100%;
     height: 15%;
     box-shadow: 1px 10px 10px white;
@@ -16,6 +16,7 @@ html, body {
 }
 
 .title {
+    color: white;
     padding-left: 300px;
     font-size: 45px;
     font-weight: bolder;
@@ -43,17 +44,18 @@ html, body {
 }
 
 .main-container {
-    background-color: var(--grey);
+    background-color: #1d323f;
     width: 100%;
-    margin-top: 5px;
+    margin-top: x;
     height: 85%;
+    padding-top: 10px;
     
 }
 
 .add-button {
     padding-top: 50px;
     width: 100%;
-    height: 50px;
+    height: 30pxpx;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -62,12 +64,12 @@ html, body {
 .add {
     text-align: center;
     margin: auto;
-    color: #050505;
-   padding: 10px;
+    color: hsl(0, 0%, 2%);
+   padding: 5px;
    width: 200px;
    height: 50px;
    font-family: 'Poppins', sans-serif;
-   font-size: 25px;
+   font-size: 20px;
    font-weight: 600;
    border-radius: 5px;
    border: 0;
@@ -84,6 +86,7 @@ a {
 }
 
 .card-container {
+    margin-top: 5px;
     margin-left: 70px;
     width: 90%;
     height: 400px;
@@ -95,15 +98,15 @@ a {
 
 .card {
     margin: 10px;
-    background-color: white;
-    width: 400px;
-    height: 350px;
+    background-color: var(--grey);
+    width: 300px;
+    height: 300px;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
 .content {
-    padding: 5px;
+    padding: 0px;
     text-align: center;
     font-size: 1.4rem;
     
@@ -114,13 +117,16 @@ a {
     border-radius: var(--border-radius);
     transition: filter 0.15s ease-in-out;
     border: 0;
-    width: 300px;
+    width: 200px;
     height: 50px;
     font-size: 20px;
 }
 
 .read {
     background-color: var(--light-green);
+}
+.remove {
+    background-color: white;
 }
 
 .read, .remove:hover {
@@ -135,32 +141,17 @@ a {
     background-color: gray;
 }
 
-.popup-win {
-
-    position: absolute;
-    margin-top: 30px;
-    margin-left: 575px;
-    background-color:whitesmoke;
-    width: 350px;
-    height: 450px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border-radius: 10px;
-}
-
 .input {
-    width: 300px;
+    width: 200px;
     padding: 7px;
     border-radius: 10px;
-    border: 1;
+    border: 0;
     font-size: 15px;
 }
 
 button.input {
     background-color: #9fff9c;
-    width: 300px;
+    width: 200px;
     height: 50px;
 }
 
@@ -170,12 +161,9 @@ button.input {
 
 
 :root {
-    --white: #fffbfb;
     --grey: #f0eef1;
-    --black: #050505;
-    --red: #ff7070;
     --light-green: #9fff9c;
-    --light-red: #ff9c9c;
+    --light-red: #141313;
     --border-radius: 8px;
     --spacing-xs: 5px;
     --spacing-sm: 10px;
